@@ -1,0 +1,86 @@
+name: flutter_base
+description: Flutter v3 code base for ios and android application.
+publish_to: "none"
+version: 1.0.0+1
+environment:
+  sdk: ">=2.17.5 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # language
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0
+
+  # architecture, state manager
+  flutter_bloc: ^8.0.1
+  provider: ^6.0.2
+
+  # api, network
+  http: ^0.13.4
+  dio: ^4.0.6
+  internet_connection_checker: ^0.0.1+4
+  jwt_decode: ^0.3.1
+
+  # store
+  shared_preferences: ^2.0.13
+  flutter_secure_storage: ^5.0.2
+  flutter_svg: ^1.0.3
+
+  # route
+  go_router: ^3.1.1
+
+  # log
+  logger_console: ^0.2.0
+
+  # UI
+  cupertino_icons: ^1.0.2
+  cached_network_image: ^3.2.1
+  sliding_up_panel: ^2.0.0+1
+
+  # util
+  device_info_plus: ^3.2.3
+  equatable: ^2.0.3
+  dartz: ^0.10.1
+  freezed_annotation: ^2.0.3
+  json_annotation: ^4.5.0
+  flutter_native_splash: ^2.2.3+1
+
+  # packages
+  config_project:
+    path: ./packages/config_project
+  di:
+    path: ./packages/di
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.1.10
+  freezed: ^2.0.3+1
+  json_serializable: ^6.2.0
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/icons/flags/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Bold.ttf
+        - asset: assets/fonts/Roboto-Italic.ttf
+        - asset: assets/fonts/Roboto-Light.ttf
+        - asset: assets/fonts/Roboto-Medium.ttf
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Thin.ttf
+
+flutter_intl:
+  enabled: true
+  class_name: S
+  main_locale: en
+  arb_dir: lib/core/generated/l10n
+  output_dir: lib/core/generated
