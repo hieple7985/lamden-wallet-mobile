@@ -52,10 +52,10 @@ flutter_native_splash:
     # image: assets/splash/splash_icon.png
 
     # Splash screen background color.
-    # color: "#42a5f5"
+    color: "#151515"
 
     # App icon background color.
-    #icon_background_color: "#111111"
+    icon_background_color: "#D9D9D9"
 
     # The image_dark parameter and icon_background_color_dark set the image and icon background
     # color when the device is in dark mode. If they are not specified, the app will use the

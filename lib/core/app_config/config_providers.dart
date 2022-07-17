@@ -1,5 +1,5 @@
-import 'package:di/di.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:services/di/di.dart';
 import 'cubit/language/language_cubit.dart';
 import 'cubit/theme/theme_cubit.dart';
 

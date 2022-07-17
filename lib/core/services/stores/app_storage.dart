@@ -1,5 +1,5 @@
-import 'package:di/di.dart';
 import 'package:config_project/config_project.dart';
+import 'package:services/di/di.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AppStorage {

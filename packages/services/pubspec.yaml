@@ -1,5 +1,5 @@
-name: di
-description: Dependency inject service.
+name: services
+description: Service package.
 version: 0.0.1
 
 environment:
@@ -9,12 +9,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.0.1
   get_it: ^7.2.0
   shared_preferences: ^2.0.13
+  internet_connection_checker: ^0.0.1+4
+  equatable: ^2.0.3
+  logger_console: ^0.2.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
-
-flutter:

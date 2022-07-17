@@ -253,13 +253,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.1"
-  di:
-    dependency: "direct main"
-    description:
-      path: "packages/di"
-      relative: true
-    source: path
-    version: "0.0.1"
   dio:
     dependency: "direct main"
     description:
@@ -484,7 +477,7 @@ packages:
     source: hosted
     version: "3.2.0"
   internet_connection_checker:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: internet_connection_checker
       url: "https://pub.dartlang.org"
@@ -749,6 +742,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.27.4"
+  services:
+    dependency: "direct main"
+    description:
+      path: "packages/services"
+      relative: true
+    source: path
+    version: "0.0.1"
   shared_preferences:
     dependency: "direct main"
     description:

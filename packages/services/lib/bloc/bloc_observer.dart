@@ -36,12 +36,20 @@ class AppBlocObserver extends BlocObserver {
     var eventPayload;
 
     try {
-      currentState = transition.currentState.map((e) => e.toJson()).toList();
+      if (transition.currentState is List) {
+        currentState = transition.currentState.map((e) => e.toJson()).toList();
+      } else {
+        currentState = transition.currentState.toJson();
+      }
     } catch (e) {
       currentState = transition.currentState.toString();
     }
     try {
-      nextState = transition.nextState.map((e) => e.toJson()).toList();
+      if (transition.nextState is List) {
+        nextState = transition.nextState.map((e) => e.toJson()).toList();
+      } else {
+        nextState = transition.nextState.toJson();
+      }
     } catch (e) {
       nextState = transition.nextState.toString();
     }

@@ -1,8 +1,6 @@
-import 'package:di/di.dart';
-import 'package:flutter_base/core/services/network/network_info.dart';
 import 'package:flutter_base/core/services/dio/dio_client.dart';
+import 'package:services/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'core/app_config/config_injection.dart';
 
 class AppInjection extends DIModuleRegister {
@@ -14,8 +12,7 @@ class AppInjection extends DIModuleRegister {
     sl.registerLazySingleton<DioClient>(() => DioClient());
 
     // Network info
-    sl.registerLazySingleton<NetworkInfo>(
-        () => NetworkInfoImpl(InternetConnectionChecker()));
+    sl.registerLazySingleton<NetworkInfo>(() => NetworkInfoImpl());
 
     // External
     final SharedPreferences sharedPreferences =

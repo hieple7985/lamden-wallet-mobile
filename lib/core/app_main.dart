@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:logger_console/logger_console.dart';
-import 'services/bloc/bloc_observer.dart';
+import 'package:services/services.dart';
 
 abstract class AppMain {
   AppMain() {

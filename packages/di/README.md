@@ -1,3 +1,0 @@
-# DI
-
-Dependency Inject
